@@ -205,3 +205,7 @@ async def lobbyRoomDel(req: Request, lobby_id: str):
         return {"message": "Lobby deleted successfully"}
     else:
         raise HTTPException(status_code=403, detail="Action forbidden")
+
+if __name__ == "__main__":
+    uvicorn.run("main:app", host="0.0.0.0", port=8000, reload=True)
+
