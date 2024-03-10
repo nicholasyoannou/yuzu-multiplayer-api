@@ -10,7 +10,7 @@ This is built in FastAPI, a Python framework. This may not be built to fit produ
 This is built as more as a draft, so there could be things that are missing, or overlooked things that could be a security muckup. Licensing is GNU, so free use to modify, publish, redistribute, etc. However, if used in your own projects, please give credit where credit is due, thank you.
 
 ## Usage and how to use
-There are 2 keys which'll need to be generated: a public and private key. This is used for JWT for use in Yuzu, for token authentication. This can be done with two simple commands (using openssl):
+The public and private keys provided are for quick testing use and should ideally not be pulled up in a production environment. There are 2 keys which'll need to be generated: a public and private key. This is used for JWT for use in Yuzu, for token authentication. This can be done with two simple commands (using openssl):
 
 - openssl genpkey -algorithm RSA -out private_key.pem -pkeyopt rsa_keygen_bits:2048
 - openssl rsa -pubout -in private_key.pem -out public_key.pem
